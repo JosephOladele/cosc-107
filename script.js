@@ -32,9 +32,9 @@ const months = [
   let tempMonth = tempDate.getMonth();
   let tempDay = tempDate.getDate();
   // months are ZERO index based;
-  const futureDate = new Date(2024,2,5, 11, 30, 0);
+  const futureDate = new Date(2024,2,12, 11, 30, 0);
   // console.log(futureDate);
-  // let futureDate = new Date(2024, 2, 5, 11, 30, 0);
+  // let futureDate = new Date(2024, 2, 12, 11, 30, 0);
   
   const year = futureDate.getFullYear();
   
@@ -96,8 +96,8 @@ const months = [
     if (currentTime < 0) {
       clearInterval(countdown);
       const expiredMessage = document.querySelector('.expired-message');
-      deadline.innerHTML = `<h4 class="expired expired-message">Sorry, this giveaway has expired! <br/> Please check back soon.</h4>`;
-  
+      deadline.innerHTML = `<h4 class="expired expired-message">Sorry, this Tesla giveaway has ended  <br/> Please stay tuned for net time .</h4>`;
+   
       expiredMessage.style.color = 'red';
       expiredMessage.style.fontWeight = 'bold';
       expiredMessage.textContent = expiredMessage.textContent.toUpperCase();
